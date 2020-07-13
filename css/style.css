@@ -1,0 +1,529 @@
+/* further idead of clip back ground first and then nav bar */
+/* with nav bar z-index higher */
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    
+    
+   
+}
+a{ text-decoration: none; }
+
+li{ list-style: none; }
+
+a:hover{
+    text-decoration: none;
+}
+/* nav{
+    background-color:rgb(113, 228, 236);;
+} */
+
+p{
+
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #606060;
+}
+
+
+    
+#logo{
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 1.5em;
+    color: white;
+}
+
+
+.header{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,168,255,0.3),rgba(0,168,255,0.3)) , url(../images/bg-image-2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    clip-path: polygon(100% 0, 100% 77%, 50% 100%, 0 75%, 0 0);
+    position: relative;  
+}
+
+.header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.3;
+    z-index: -1;
+    background: linear-gradient(to right, #1e5799 0,#3ccdbb 0,#16c9f6 100%);
+}
+
+/* .navbar::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.3;
+    z-index: -1;
+    background: linear-gradient(to right, #1e5799 0,#3ccdbb 0,#16c9f6 100%);
+} */
+
+
+
+.nav-item a{
+    margin-left: 15px;
+    font-weight: bold;
+
+    color: white;
+}
+
+.header-section{
+    
+    width: 100%;
+    height: inherit;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+.first-line{
+    font-size: 4em;
+}
+.second-line{
+    font-size: 2em;
+    color: white;
+}
+
+
+
+/* take center div at center */
+.center-div{
+
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+.header-buttons a{
+    border: 1px solid #fff;
+    border-radius: 100px;
+    margin: 0px 5px;
+    margin-top: 100px;
+    padding: 12px 35px;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+
+}
+.header-buttons a:hover{
+    color: #50d1c0;
+    background: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
+
+}
+.center-div p{
+
+    padding: 10px 0px 20px 0px;
+}
+
+
+/* skills css starts here */
+
+
+.skillset{
+    background: #f7f7f9;
+    padding: 50px 0;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.headings{
+    margin-bottom: 50px;
+}
+
+.headings h1{
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.skills h1{
+    color: #2e2e2e;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.servicediv{
+    margin-top: 15px;
+}
+
+.servicediv h2{
+    font-size: 0.9rem;
+    margin: 20px 0 15px 0;
+    font-weight: bold;
+    line-height: 1.1;
+    word-spacing: 4px;;
+}
+
+.service-icons{
+    /* border: solid 2px black; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(7, 192, 192);
+    
+}
+.progress{
+    margin-bottom: 25px!important;
+    background: #e0dede;
+}
+
+/* skills css ends here */
+
+
+/* Projects done CSS starts here */
+
+
+.project-work{
+    margin: 100px 0;
+
+}
+
+.project-work h1{
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+
+/* Projects done CSS Ends  here */
+
+
+/* project-list   starts here     */
+
+
+.temp{
+    background: #dd2476;
+    background: var(--bggradient);
+
+}
+
+.project-list{
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0;
+  
+
+}
+
+.box{
+
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px 0 rgb(0, 0, 0, 0.3);
+    border-radius: 2px;
+    transition: 0.3s ease;
+    margin-bottom: 50px;
+}
+
+.box:hover{
+    background: #16c9f6;
+}
+
+.box:hover p{
+    color: white;
+}
+.carousel-indicators{
+    position: absolute;
+    right: 0;
+    bottom: -60px!important;
+}
+
+.carousel-indicators li{
+    background-color: #16c9f6;
+}
+
+.box a{
+    position: relative;
+}
+
+.box a img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.box a::after{
+    content: "\f10d";
+    font-family: 'Font Awesome\ 5 Free'; 
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(to right, #1e5799 0,#3ccdbb 0,#16c9f6 100%);
+    color: white;
+    position: absolute;
+    top: 120%;
+    left: 75%;
+    
+    border-radius: 50%;
+
+
+    /* default centering statements */
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+}
+.box h1{
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+
+
+
+/* project-list   ends here    */
+
+
+
+/* contact me css starts here */
+
+
+.contact-me{
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0;
+    
+    position: relative;
+}
+
+.contact-me:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(330deg,#16c9f6 55%,#fff 0%);
+    z-index: -1;
+}
+
+
+.formbutton{
+    
+    border-radius: 100px;
+    margin: 0px 5px;
+    margin-top: 20px;
+    padding: 12px 35px;
+    
+    
+    font-size: 1rem;
+    
+   
+    text-align: center;
+    background: #fff;
+    color: #50d1c0;
+    margin-bottom: 100px;
+}
+.formbutton:hover{
+    background: #50d1c0;
+    color: white;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+}
+
+::placeholder{
+    font-size: 0.85rem;
+}
+/* contact me css ends here */
+
+/* footer starts here     */
+
+
+
+/*FOOTER*/
+
+footer {
+    background: #16222A;
+    background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
+    background: 
+    color: white;
+    margin-top:300px;
+  }
+  
+  footer a {
+    color: #fff;
+    font-size: 14px;
+    transition-duration: 0.2s;
+  }
+  
+  footer a:hover {
+    color: #FA944B;
+    text-decoration: none;
+  }
+  
+  .copy {
+    font-size: 12px;
+    padding: 10px;
+    border-top: 1px solid #FFFFFF;
+  }
+  
+  .footer-middle {
+    padding-top: 2em;
+    color: white;
+  }
+  
+  
+  /*SOCİAL İCONS*/
+  
+  /* footer social icons */
+  
+  ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    padding: 0;
+  }
+  
+  ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+  }
+  
+  
+  /* footer social icons */
+  
+  .social-network a.icoFacebook:hover {
+    background-color: #3B5998;
+  }
+  
+  .social-network a.icoLinkedin:hover {
+    background-color: #007bb7;
+  }
+  .social-network a.icoGithub:hover {
+    background-color:rgb(32, 31, 31);
+  }
+  .social-network a.icoInstagram:hover {
+    background-color:#cd3b89
+  }
+  
+  
+  .social-network a.icoFacebook:hover i,
+  .social-network a.icoLinkedin:hover i ,
+  .social-network a.icoGithub:hover i,
+  .social-network a.icoInstagram:hover i{
+    color: #fff;
+  }
+  
+  .social-network a.socialIcon:hover,
+  .socialHoverClass {
+    color: #44BCDD;
+  }
+  
+  .social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+  }
+  
+  .social-circle li i {
+    margin: 0;
+    line-height: 30px;
+    text-align: center;
+  }
+  
+  .social-circle li a:hover i,
+  .triggeredHover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  
+  .social-circle i {
+    color: #595959;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+  }
+  
+  .social-network a {
+    background-color: #F9F9F9;
+  }
+
+  .footer-headings{
+      color: #16c9f6;
+      font-size: 1.1rem;
+  }
+  .about-me-footer{
+      font-size: 1rem;
+  }
+
+  .copy p{
+
+    color: grey;
+  }
+  .copy p i{
+      color: red;
+  }
+  #myBtn{
+      display: inline-block;
+      position: fixed;
+      bottom: 20px;
+      right: 40px;
+      color: white;
+      border: none;
+      z-index: 99;
+      background: #00abff;
+      padding: 10px;
+      border-radius: 10px;
+  }
+  #myBtn:hover{
+      background: #606060;
+  }
+
+
+
+
+
+
+
+
+/* footer ends      here     */
+
+
+
+
+
+
