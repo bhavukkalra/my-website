@@ -33,13 +33,13 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">SkillSet</a>
+                <a class="nav-link" href="#skillsetdiv">SkillSet</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
+                <a class="nav-link" href="#projectdiv">Projects</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Upcoming</a>
+                <a class="nav-link" href="#footerdiv">FOLLOW ME</a>
             </li>    
                 </ul>
             </div>
@@ -53,8 +53,8 @@
             </div>
             
             <div class="header-buttons">
-                <a href="#">About Me</a>
-                <a href="#">Contact</a>
+                <a href="#footerdiv">About Me</a>
+                <a href="#contactdiv">Contact</a>
             </div>   
 
         </div>
@@ -65,7 +65,7 @@
 
 <!-- -------------Skill section Starts----- -->
 
-<section class="skillset" id="about-div">
+<section class="skillset" id="skillsetdiv">
     <div class="container headings text-center">
         <h1 class="text-center font-weight-bold">SKILLSET</h1>
         <p class="text-center">Still learning, like its day one!</p>
@@ -181,13 +181,13 @@
 
 
 
-<section class="project-work" id="about-div">
+<section class="project-work" id="project-count-div">
     <div class="container headings text-center">
         <p class="text-center font-weight-bold">My Accomplishments</p>
         
     </div>
 
-    <div class="container d-flex justify-content-around align-items-center ">
+    <div class="container d-flex justify-content-around align-items-center media-count">
         <div>
 
             <h1 class="count">6</h1>
@@ -223,7 +223,7 @@
 
 
 <!-- projects list starts here -->
-<section class="project-list">
+<section class="project-list" id="projectdiv">
     <div class="container headings text-center">
         <h1 class="text-center font-weight-bold ">MY PROJECTS</h1>
         <p class="text-capitalize pt-1"> PROJECTS THAT I HAVE WORKED UPON</p>
@@ -236,7 +236,7 @@
         <ul class="carousel-indicators">
           <li data-target="#demo" data-slide-to="0" class="active"></li>
           <li data-target="#demo" data-slide-to="1"></li>
-          <li data-target="#demo" data-slide-to="2"></li>
+          <!-- <li data-target="#demo" data-slide-to="2"></li> -->
         </ul>
       
         <!-- The slideshow -->
@@ -247,9 +247,9 @@
                 <div class="box">
 
 
-                    <a href="#"><img src="images/project-img.jpeg" alt="ml" class="img-fluid img-thumbnail"></a>
-                    <p class="m-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quia, alias quos dolorum labore ducimus sapiente iste praesentium officiis nam.</p>
-                    <h1>Title Goes here</h1>
+                    <a href="https://github.com/bhavukkalra/QuestionGeneration-NLP" target="_blank"><img src="images/QuestionAnswering-System.png" alt="ml" class="img-fluid img-thumbnail"></a>
+                    <p class="m-4">A project that i worked upon during my internship. Given a paragraph as a input, Outputs Questions related to paragraph. Deployed on www.ootsuk.com</p>
+                    <h1>QuestionAnswering-System</h1>
                     
                 </div>
 
@@ -259,9 +259,9 @@
                 <div class="box">
 
 
-                    <a href="#"><img src="images/project-img.jpeg" alt="ml" class="img-fluid img-thumbnail"></a>
-                    <p class="m-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quia, alias quos dolorum labore ducimus sapiente iste praesentium officiis nam.</p>
-                    <h1>Title Goes here</h1>
+                    <a href="https://github.com/bhavukkalra/amazon_project_test" target="_blank"><img src="images/AmazonPricesTrack.png" alt="ml" class="img-fluid img-thumbnail"></a>
+                    <p class="m-4">A python script constantly tracking the amazon website for specified products prices. If it goes down a certain amount sends a mail alerting the user about the price drop. </p>
+                    <h1>AmazonPricesTrack</h1>
                     
                 </div>
 
@@ -271,9 +271,9 @@
                 <div class="box">
 
 
-                    <a href="#"><img src="images/project-img.jpeg" alt="ml" class="img-fluid img-thumbnail"></a>
-                    <p class="m-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quia, alias quos dolorum labore ducimus sapiente iste praesentium officiis nam.</p>
-                    <h1>Title Goes here</h1>
+                    <a href="https://github.com/bhavukkalra/ML_digit_classifier" target="_blank"><img src="images/HandWrittenDigits-Classifier.png" alt="ml" class="img-fluid img-thumbnail"></a>
+                    <p class="m-4">A model build upon self implemented K-Nearest Neighbours algorithm to recognize Hand Written Digits using MNIST as a dataset. Achieved 70% accuracy.</p>
+                    <h1>HandWrittenDigits-Classifier</h1>
                     
                 </div>
 
@@ -289,84 +289,17 @@
                  <div class="box">
  
  
-                     <a href="#"><img src="images/project-img.jpeg" alt="ml" class="img-fluid img-thumbnail"></a>
-                     <p class="m-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quia, alias quos dolorum labore ducimus sapiente iste praesentium officiis nam.</p>
-                     <h1>Title Goes here</h1>
+                     <a href="https://github.com/bhavukkalra/C-project-numbershifting" target="_blank"><img src="images/NumberShiftingGame.png" alt="ml" class="img-fluid img-thumbnail"></a>
+                     <p class="m-4">My first ever personal project. A console based number shifting game using C++ without any external dependencies.For advancing my data structures and algorithmic skills.</p>
+                     <h1>NumberShiftingGame</h1>
                      
                  </div>
- 
- 
              </div>
-             <div class="col-lg-4 col-md-4 col-sm-12">
-                 <div class="box">
- 
- 
-                     <a href="#"><img src="images/project-img.jpeg" alt="ml" class="img-fluid img-thumbnail"></a>
-                     <p class="m-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quia, alias quos dolorum labore ducimus sapiente iste praesentium officiis nam.</p>
-                     <h1>Title Goes here</h1>
-                     
-                 </div>
- 
- 
-             </div>
-             <div class="col-lg-4 col-md-4 col-sm-12">
-                 <div class="box">
- 
- 
-                     <a href="#"><img src="images/project-img.jpeg" alt="ml" class="img-fluid img-thumbnail"></a>
-                     <p class="m-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quia, alias quos dolorum labore ducimus sapiente iste praesentium officiis nam.</p>
-                     <h1>Title Goes here</h1>
-                     
-                 </div>
- 
- 
-             </div>
- 
+
             </div>
             
           </div>
-          <div class="carousel-item">
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                 <div class="box">
- 
- 
-                     <a href="#"><img src="images/project-img.jpeg" alt="ml" class="img-fluid img-thumbnail"></a>
-                     <p class="m-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quia, alias quos dolorum labore ducimus sapiente iste praesentium officiis nam.</p>
-                     <h1>Title Goes here</h1>
-                     
-                 </div>
- 
- 
-             </div>
-             <div class="col-lg-4 col-md-4 col-sm-12">
-                 <div class="box">
- 
- 
-                     <a href="#"><img src="images/project-img.jpeg" alt="ml" class="img-fluid img-thumbnail"></a>
-                     <p class="m-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quia, alias quos dolorum labore ducimus sapiente iste praesentium officiis nam.</p>
-                     <h1>Title Goes here</h1>
-                     
-                 </div>
- 
- 
-             </div>
-             <div class="col-lg-4 col-md-4 col-sm-12">
-                 <div class="box">
- 
- 
-                     <a href="#"><img src="images/project-img.jpeg" alt="ml" class="img-fluid img-thumbnail"></a>
-                     <p class="m-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quia, alias quos dolorum labore ducimus sapiente iste praesentium officiis nam.</p>
-                     <h1>Title Goes here</h1>
-                     
-                 </div>
- 
- 
-             </div>
- 
-            </div>
-            
-          </div>
+         
         </div>
       
         <!-- Left and right controls -->
@@ -454,46 +387,46 @@
 
 <!-- social icons starts here -->
 
-<footer class="mainfooter " role="contentinfo">
+<footer class="mainfooter " role="contentinfo" id="footerdiv">
     <div class="footer-middle">
     <div class="container">
       <div class="row">
-        <div class="col-md-4 col-sm-6 ">
+        <div class="col-md-4">
           <!--Column1-->
           <div class="footer-pad">
-            <h4 class="footer-headings">About Me</h4>
-            <h5 class="about-me-footer">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, et?</h5>
+            <h4 class="footer-headings">ABOUT ME</h4>
+            <h5 class="about-me-footer">I am a second year student at Thapar University with understanding about Machine Learning, Microsoft Azure, Automation, Web Scraping</h5>
             
           </div>
         </div>
-        <div class="col-md-4 col-lg-4 col-sm-6 ">
+        <div class="col-md-4 col-lg-4">
           <!--Column1-->
           <div class="footer-pad">
-            <h4 class="footer-headings">NAVIGATION LINKS</h4>
+            <h4 class="footer-headings middle-heading">NAVIGATION LINKS</h4>
             <ul class="list-unstyled">
-              <li><a href="#">Website Tutorial</a></li>
-              <li><a href="#">Accessibility</a></li>
-              <li><a href="#">Disclaimer</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#skillsetdiv">SkillSet</a></li>
+              <li><a href="#projectdiv">Projects</a></li>
+              <li><a href="#contactdiv">Contact Me</a></li>
+              
             
             </ul>
           </div>
         </div>
        
           <div class="col-md-4 col-lg-4">
-              <h4 class="footer-headings">Follow Us</h4>
+              <h4 class="footer-headings">FOLLOW ME</h4>
               <ul class="social-network social-circle">
-               <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-               <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="#" class="icoGithub" title="Github"><i class="fa fa-github"></i></a></li>
-               <li><a href="#" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+               <li><a href="https://www.facebook.com/people/Bhavuk-Kalra/100004966486743" class="icoFacebook" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="https://in.linkedin.com/in/bhavuk-kalra-256b67151" class="icoLinkedin" title="Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://github.com/bhavukkalra" class="icoGithub" title="Github" target="_blank"><i class="fa fa-github"></i></a></li>
+               <li><a href="https://www.instagram.com/bhavukkalra1786/" class="icoInstagram" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
                
               </ul>				
           </div>
       </div>
       <div class="row">
-          <div class="col-md-12 copy col-sm-1 0 ">
+          <div class="col-md-12 copy col-sm-10 ">
               <p class="text-center">&copy; Copyright 2020 - Made with <i class="fa fa-heart" aria-hidden="true"> </i> by Bhavuk Kalra </p>
               <div class="scrolltop float-right">
                 <i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn"></i>

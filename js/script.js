@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$( document ).ready(function() {
     $('.count').counterUp({
         delay:100,
         time:3000
@@ -9,19 +9,15 @@ $(document).ready(function() {
 
   //when the user scrolls down by 20px from the top show the button
 
-  window.onscroll = function(){
-      scrollFunction();
-  };
-
-  function scrollFunction(){
+  window.addEventListener('scroll', function() {
       // second condition for mozilla
-      if(document.body.scrollTop > 20){
-          mybutton.style.display = "block";
-      }
-      else{
-          mybutton.style.display = "none";
-      }
-  }
+        if(window.pageYOffset > 20){
+        mybutton.style.display = "block";
+    }
+    else{
+        mybutton.style.display = "none";
+    }
+  });
 
   // core functionality
 

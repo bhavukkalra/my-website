@@ -2,6 +2,10 @@
 /* with nav bar z-index higher */
 
 
+html{
+    scroll-behavior: smooth;
+}
+
 *{
 
     margin: 0;
@@ -498,7 +502,7 @@ footer {
       color: red;
   }
   #myBtn{
-      display: inline-block;
+      display: none;
       position: fixed;
       bottom: 20px;
       right: 40px;
@@ -513,14 +517,57 @@ footer {
       background: #606060;
   }
 
-
-
-
-
-
-
-
 /* footer ends      here     */
+
+
+/* Media Queries starts here */
+
+
+@media(max-width: 768px){
+    .nav-item{
+        text-align: center!important;
+    }
+    .media-count h1{
+        font-size: 2rem!important;
+        
+    }
+    .media-count p{
+        font-size: 0.75rem!important;
+        margin-right: 20px!important;
+    }
+   
+    .project-list{
+        height: auto;
+        margin-top: 50px;
+    }
+    
+
+    .middle-heading{
+        margin: 20px 0;
+    }
+    
+    .copy p{
+        font-size: 0.75rem;
+    }
+   
+    }
+
+
+    @media(max-height: 768px){
+
+
+    }
+
+
+
+
+
+
+
+
+
+/* Media Queries Ends here */
+
 
 
 
